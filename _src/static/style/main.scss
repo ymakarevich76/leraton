@@ -7,6 +7,13 @@
 @import "block/container";
 @import "block/section";
 
+
+@import "block/search";
+@import "block/social";
+@import "block/time";
+@import "block/phone";
+@import "block/address";
+
 @import "block/button/btn-reset";
 @import "block/button/btn";
 
@@ -20,11 +27,6 @@
 @import "block/logo";
 // @import "block/breadcrumb";
 @import "block/title/title";
-
-// @import "block/form/form";
-// @import "block/form/form-group";
-// @import "block/form/form-label";
-// @import "block/form/form-control";
 
 @import "block/footer/footer";
 

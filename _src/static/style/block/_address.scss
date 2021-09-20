@@ -1,0 +1,29 @@
+.address {
+  position: relative;
+
+  padding-left: 30px;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+  font-family: $ff-main;
+  color: $c-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 14px;
+    height: 18px;
+
+    background: url("../img/icon/mark.png") no-repeat;
+    background-size: 100%;
+    transform: translate(0,-50%);
+  }
+}
+
+.address__location {
+}

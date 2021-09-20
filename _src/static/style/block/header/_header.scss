@@ -1,2 +1,38 @@
 .header {
+  padding-top: 20px;
+
+  background-color: #232634;
+}
+
+.header__container {
+}
+
+.header__top {
+  display: flex;
+}
+
+.header__logo {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  min-width: 540px;
+  margin-right: auto;
+  padding-left: 190px;
+}
+
+.header__time {
+  margin-right: 61px;
+}
+
+.header__phone {
+  margin-right: 40px;
+}
+
+.header__social {
+  margin-left: 10px;
 }
