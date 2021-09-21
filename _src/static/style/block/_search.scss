@@ -2,6 +2,10 @@
 }
 
 
+.search__wrap-input {
+  position: relative;
+}
+
 .search__input {
   width: 100%;
   min-width: 248px;
@@ -9,7 +13,20 @@
   padding: 10px 10px 10px;
 
   background-color: #ededf0;
+  border: none;
   border-radius: 4px;
+
+  @media (max-width: $xl) {
+    min-width: 400px;
+  }
+
+  @media (max-width: $lg) {
+    min-width: 300px;
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
 
   &:hover,
   &:focus {
@@ -18,16 +35,13 @@
   }
 }
 
-.search__wrap-input {
-  position: relative;
-}
-
 .search__btn {
   position: absolute;
   top: 50%;
   right: 15px;
 
-  display: block;
+  display: flex;
+  align-items: center;
   width: 20px;
   height: 19px;
 

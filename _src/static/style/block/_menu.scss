@@ -1,0 +1,30 @@
+.menu {
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  padding-bottom: 25px;
+
+  &:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.menu__link {
+  font-weight: 700;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: #222;
+  text-transform: uppercase;
+
+  transition: .3s;
+
+  &:hover {
+    color: $c-red;
+    text-decoration: none;
+  }
+}

@@ -1,7 +1,35 @@
 .time {
+  position: relative;
+
+  padding-left: 30px;
+
   font-weight: 400;
   font-size: 17px;
-  line-height: 1;
+  line-height: 1.2;
   font-family: $ff-main;
   color: $c-white;
+
+  @media (max-width: $lg) {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    display: block;
+    width: 17px;
+    height: 17px;
+
+    background: url("../img/icon/time.png") no-repeat;
+    background-size: 100%;
+  }
 }
+
+.time span {
+  color: $c-accent;
+}
+

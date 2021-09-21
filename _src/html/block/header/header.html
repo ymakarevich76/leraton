@@ -4,8 +4,8 @@
 
       <a href="index.html" class="header__logo logo">
         <picture>
-          <source srcset="static/img/logo/logo-mob.png" media="(max-width: 575px)">
-          <source srcset="static/img/logo/logo-tab.png" media="(max-width: 767px)">
+          <source srcset="static/img/logo/logo-mob.png" media="(max-width: 767px)">
+          <source srcset="static/img/logo/logo-tab.png" media="(max-width: 1199px)">
           <img src="static/img/logo/logo.png" alt="Логотип">
         </picture>
       </a>
@@ -23,38 +23,56 @@
         </div>
 
         <div class="header__address address">
-          <span class="address__location">г. Москва, ул. 1-ая<br>
-            Мытищинская 27с1
+          г. Москва, ул. 1-ая<br>
+          Мытищинская 27с1
         </div>
       </div>
 
-      <form class="header__search search">
-        <div class="search__wrap-input">
-          <input type="text" class="search__input" name="search">
-          <button type="submit" class="search__btn btn-reset">
+      <div class="header__dynamic">
+        <form class="header__search search">
+          <div class="search__wrap-input">
+            <input type="text" class="search__input" name="search">
+            <button type="submit" class="search__btn btn-reset">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="header__social social">
+          <a href="#" class="social__link">
+            <img src="static/img/icon/vk.png" alt="Вконтакте">
+          </a>
+          <a href="#" class="social__link">
+            <img src="static/img/icon/inst.png" alt="Инстаграм">
+          </a>
+        </div>
+
+        <div class="header__wrap-btn header__wrap-btn--tab">
+          <button class="header__user btn-reset" type="button">
             <svg aria-hidden="true">
-              <use xlink:href="static/img/symbol/sprite.svg#icon-search"></use>
+              <use xlink:href="static/img/symbol/sprite.svg#user"></use>
             </svg>
           </button>
+          <button class="header__cart btn-reset" type="button">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+            </svg>
+            <span class="header__cart-count">0</span>
+          </button>
         </div>
-      </form>
-
-      <div class="header__social social">
-        <a href="#" class="social__link">
-          <img src="static/img/icon/vk.png" alt="Вконтакте">
-        </a>
-        <a href="#" class="social__link">
-          <img src="static/img/icon/inst.png" alt="Инстаграм">
-        </a>
       </div>
     </div>
+
+
     <!--/header-top-->
 
     <div class="header__bottom">
       <nav class="header__nav nav">
         <ul class="nav__list list-reset">
-          <li class="nav__item nav__item--submenu">
-            <a href="catalog.html" class="nav__link nav__link--icon">О компании</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link">О компании</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link">Клиентам</a>
@@ -66,7 +84,7 @@
             <a href="#" class="nav__link">Оплата и Доставка</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">помощь-решение</a>
+            <a href="#" class="nav__link">Помощь-решение</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link">Партнеры</a>
@@ -77,13 +95,149 @@
         </ul>
       </nav>
       <div class="header__wrap-btn">
-        <button class="header__user btn-reset" type="button"></button>
-        <button class="header__cart btn-reset" type="button"></button>
+        <button class="header__user btn-reset" type="button">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#user"></use>
+          </svg>
+        </button>
+        <button class="header__cart btn-reset" type="button">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+          </svg>
+          <span class="header__cart-count">0</span>
+        </button>
       </div>
     </div>
 
-    <!-- <div class="header__icon-menu icon__menu">
+  </div>
+  <!--/container-->
+
+  <nav class="header__menu menu">
+    <ul class="header__menu-container">
+      <ul class="menu__list list-reset">
+        <li class="menu__item">
+          <a href="#" class="menu__link">МОЙКА И УХОД</a>
+          <div class="sub-menu">
+            <div class="sub-menu__container">
+              <div class="sub-menu__row">
+                <div class="sub-menu__col">
+                  <h2 class="sub-menu__title">Мойка</h2>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Ручная мойка</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Бесконтактная мойка</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Нано мойка</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Воски для сушки и консервации</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Уход за мотоциклами</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Уход за лодками и яхтами</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub-menu__col">
+                  <h2 class="sub-menu__title">Экстерьер</h2>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка кузова</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Уход за резиной и внешним пластиком</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка дисков</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка моторного отсека</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за хромом и металлами</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Полировочная глина</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub-menu__col">
+                  <h2 class="sub-menu__title">Интерьер</h2>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за тканью</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за пластиком</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за стеклом</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Очистка и уход за кожей</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Реставрация кожи</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub-menu__col">
+                  <h2 class="sub-menu__title">Освежители воздуха</h2>
+                  <ul class="sub-menu__list list-reset">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Освежители воздуха подвесные</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Освежители воздуха в виде спрея</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__link">Освежители воздуха сухие и гелевые</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--/sub-menu__container-->
+          </div>
+          <!--/sub-menu-->
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ПОЛИРОВКА</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ЗАЩИТА ПОВЕРХНОСТЕЙ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ПЛЁНКИ И ИНСТРУМЕНТ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">РАСХОДНИКИ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">МАРКЕТИНГ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ОБОРУДОВАНИЕ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">РАСПРОДАЖА</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">БРЕНДЫ</a>
+        </li>
+      </ul>
+      </div>
+      <!-- <div class="nav__icon icon-nav">
       <span></span>
     </div> -->
-  </div>
+  </nav>
+
+  <!-- <div class="header__icon-menu icon__menu">
+      <span></span>
+    </div> -->
 </header>

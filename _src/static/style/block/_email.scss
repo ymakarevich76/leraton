@@ -1,7 +1,8 @@
-.phone {
+.email {
   position: relative;
 
   display: flex;
+  flex-direction: column;
   padding-left: 30px;
 
   opacity: 1;
@@ -19,16 +20,20 @@
     left: 0;
 
     display: block;
-    width: 19px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
 
-    background: url("../img/icon/phone.png") no-repeat;
+    background: url("../img/icon/email.png") no-repeat;
     background-size: 100%;
     cursor: pointer;
   }
 }
 
-.phone__link {
+.email__wrap {
+  display: flex;
+}
+
+.email__link {
   font-weight: 400;
   font-size: 17px;
   line-height: 1.2;
@@ -48,8 +53,8 @@
   }
 }
 
-.phone__text {
-  margin: 0 5px;
+.email__text {
+  margin-left: 5px;
 
   font-weight: 400;
   font-size: 17px;
