@@ -1,0 +1,73 @@
+.insert {
+  position: relative;
+
+  height: 455px;
+
+  background: url("../img/bc/1.png") no-repeat center center;
+  background-size: cover;
+
+  @media (max-width: $xl) {
+    background-position: 24% 0;
+  }
+
+  @media (max-width: $lg) {
+    height: 345px;
+
+    background: url("../img/bc/1-tab.png") no-repeat center center;
+    background-position: 20% -110px;
+  }
+
+  @media (max-width: $md) {
+    height: 160px;
+
+    background-position: 0 -297px;
+    background-size: auto;
+  }
+}
+
+.insert__info {
+  padding-top: 280px;
+
+  @media (max-width: $xl) {
+    padding-top: 268px;
+  }
+
+  @media (max-width: $lg) {
+    padding-top: 170px;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 41px;
+  }
+}
+
+.insert__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  font-family: $ff-main;
+  color: #5dbc79;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+
+  @media (max-width: $md) {
+    font-size: 24px;
+  }
+}
+
+.insert__text {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  font-family: $ff-main;
+  color: $c-white;
+  letter-spacing: .025em;
+
+  @media (max-width: $md) {
+    font-size: 18px;
+  }
+}

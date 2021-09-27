@@ -5,8 +5,9 @@
 
 // ///////////////////////////////////////// block
 @import "block/container";
-@import "block/section";
 
+@import "block/button/btn-reset";
+@import "block/button/btn";
 
 @import "block/search";
 @import "block/social";
@@ -15,9 +16,12 @@
 @import "block/address";
 @import "block/email";
 @import "block/nav";
+@import "block/menu";
+@import "block/sub-menu";
 
-@import "block/button/btn-reset";
-@import "block/button/btn";
+@import "block/insert";
+@import "block/popular";
+@import "block/card";
 
 // @import "block/link/link-stretched";
 @import "block/link/link";
@@ -25,9 +29,6 @@
 @import "block/list/list-reset";
 // @import "block/list/list";
 
-
-@import "block/menu";
-@import "block/sub-menu";
 
 @import "block/header/header";
 @import "block/logo";

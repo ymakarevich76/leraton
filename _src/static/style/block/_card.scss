@@ -1,0 +1,271 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: $c-3;
+  margin-bottom: 45px;
+
+  @media (max-width: $lg) {
+    width: $c-6;
+  }
+}
+
+
+.card.new {
+  position: relative;
+
+  &::after {
+    content: "NEW";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: $ff-main;
+    color: #fff;
+    text-transform: uppercase;
+
+    background-color: $c-accent;
+
+
+    @media (max-width: $md) {
+      top: 6px;
+      right: 6px;
+
+      width: 44px;
+      height: 30px;
+
+      font-size: 15px;
+    }
+  }
+}
+
+.card__wrap-img {
+  position: relative;
+
+  display: flex;
+  flex-grow: 1;
+  height: 255px;
+  margin-bottom: 16px;
+
+  &:hover .card__img-buy {
+    visibility: visible;
+    opacity: 1;
+
+    @media (max-width: $xl) {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: $md) {
+    height: 213px;
+  }
+}
+
+.card__wrap-img img {
+  height: 255px;
+
+  @media (max-width: $xl) {
+    height: 245px;
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
+    // height: 100%;
+    height: 330px;
+  }
+
+
+  @media (max-width: $md) {
+    height: 145px;
+  }
+}
+
+.card__title {
+  flex-grow: 1;
+  margin-bottom: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+
+  @media (max-width: $md) {
+    font-size: 14px;
+  }
+}
+
+.card__title-module {
+  font-weight: 400;
+  color: #666;
+}
+
+.card__cost {
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #539b68;
+
+  @media (max-width: $md) {
+    font-size: 18px;
+  }
+}
+
+.card__img-buy {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 255px;
+  // height: auto;
+  padding: 180px 20px 25px;
+
+  background-color: rgba(102, 102, 102, .5);
+  visibility: hidden;
+  opacity: 0;
+
+  @media (max-width: $xl) {
+    align-items: flex-end;
+    height: 245px;
+    padding: 0;
+
+    background-color: transparent;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    // height: 100%;
+    height: 330px;
+  }
+
+  @media (max-width: $md) {
+    height: 225px;
+  }
+}
+
+.card__cart {
+  position: relative;
+
+  width: 44px;
+  height: 44px;
+  margin-right: 5px;
+
+  background-color: $c-main;
+  cursor: pointer;
+
+  @media (max-width: $xl) {
+    margin-right: 0;
+
+    background-color: #232634;
+  }
+
+  @media (max-width: $lg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+  }
+
+
+  @media (max-width: $md) {
+    height: 40px;
+    margin-bottom: 1px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 29px;
+    height: 29px;
+
+    background: url("../img/icon/add-cart.png") no-repeat;
+    background-size: 100%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: $lg) {
+      left: 20%;
+    }
+  }
+}
+
+.card__cart-text {
+  display: none;
+
+  @media (max-width: $lg) {
+    display: inline-block;
+    margin-bottom: 0;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: $ff-main;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $md) {
+    padding-left: 35px;
+
+    font-size: 15px;
+  }
+}
+
+.card__buy-btn {
+  min-width: 165px;
+  height: 44px;
+  padding: 12px;
+
+  font-size: 18px;
+
+  @media (max-width: $xl) {
+    background-color: $c-accent;
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
+    height: 60px;
+  }
+
+  @media (max-width: $md) {
+    min-width: 145px;
+    height: 40px;
+
+    font-size: 15px;
+  }
+}
+
+.card__cart-word {
+  @media (max-width: $lg) {
+    white-space: pre-wrap;
+  }
+
+  @media (max-width: $md) {
+    display: none;
+  }
+}

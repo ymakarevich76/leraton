@@ -1,0 +1,44 @@
+.popular {
+  padding-top: 43px;
+  padding-bottom: 55px;
+
+  @media (max-width: $lg) {
+    padding-top: 35px;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 24px;
+  }
+}
+
+.popular__title {
+  margin-bottom: 26px;
+
+  @media (max-width: $md) {
+    margin-bottom: 16px;
+
+    font-size: 18px;
+  }
+}
+
+.popular__wrap {
+  display: flex;
+}
+
+.popular__wrap.row {
+  @media (max-width: $md) {
+    margin: 0 -5px !important;
+  }
+}
+
+.popular__card {
+  @media (max-width: $md) {
+    width: calc(50% - 10px);
+  }
+}
+
+.popular__card.col {
+  @media (max-width: $md) {
+    margin: 0 5px 30px;
+  }
+}
