@@ -1,55 +1,69 @@
 .card {
   display: flex;
   flex-direction: column;
-}
 
-.card.new {
-  position: relative;
+  &:hover {
+    text-decoration: none;
+  }
 
-  &::after {
-    content: "NEW";
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  &--new {
+    position: relative;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 40px;
+    &::after {
+      content: "NEW";
+      position: absolute;
+      top: 10px;
+      right: 10px;
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.2;
-    font-family: $ff-main;
-    color: #fff;
-    text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 40px;
 
-    background-color: $c-accent;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.2;
+      font-family: $ff-main;
+      color: #fff;
+      text-transform: uppercase;
+
+      background-color: $c-accent;
+
+      @media (max-width: $lg) {
+        top: 13px;
+      }
 
 
-    @media (max-width: $md) {
-      top: 6px;
-      right: 6px;
+      @media (max-width: $md) {
+        top: 6px;
+        right: 6px;
 
-      width: 44px;
-      height: 30px;
+        width: 44px;
+        height: 30px;
 
-      font-size: 15px;
+        font-size: 15px;
+      }
     }
   }
 }
 
 .card__wrap-img {
   position: relative;
+
   height: 255px;
   margin-bottom: 16px;
+
   border: 1px solid rgb(211, 211, 211);
 
   @media (max-width: $xl) {
     display: flex;
     flex-direction: column;
     height: auto;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 5px;
   }
 }
 
@@ -79,11 +93,14 @@
   }
 
   @media (max-width: $xl) {
-    margin-top: auto;
     position: relative;
+    top: 1px;
+
     align-items: flex-end;
-    padding: 0;
     height: auto;
+    margin-top: auto;
+    padding: 0;
+
     background-color: transparent;
     visibility: visible;
     opacity: 1;
@@ -91,7 +108,11 @@
 
   @media (max-width: $lg) {
     flex-direction: column;
-    margin-top: -30px;
+    margin-top: 13px;
+  }
+
+  @media (max-width: $md) {
+    margin-top: 0;
   }
 }
 
@@ -140,7 +161,21 @@
     transform: translate(-50%, -50%);
 
     @media (max-width: $lg) {
-      left: 20%;
+      left: 24%;
+
+      width: 39px;
+      height: 39px;
+
+      background: url("../img/icon/add-cart-big.png") no-repeat;
+    }
+
+    @media (max-width: $md) {
+      left: 22%;
+
+      width: 29px;
+      height: 29px;
+
+      background: url("../img/icon/add-cart.png") no-repeat;
     }
   }
 }
@@ -151,6 +186,7 @@
   @media (max-width: $lg) {
     display: inline-block;
     margin-bottom: 0;
+    padding-left: 60px;
 
     font-weight: 700;
     font-size: 18px;
@@ -184,7 +220,7 @@
   }
 
   @media (max-width: $md) {
-    min-width: 145px;
+    min-width: 100%;
     height: 40px;
 
     font-size: 15px;

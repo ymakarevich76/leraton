@@ -1,13 +1,19 @@
 .popular {
   padding-top: 43px;
-  padding-bottom: 55px;
+  padding-bottom: 14px;
+
+  @media (max-width: $xl) {
+    padding-bottom: 5px;
+  }
 
   @media (max-width: $lg) {
     padding-top: 35px;
+    padding-bottom: 0;
   }
 
   @media (max-width: $md) {
     padding-top: 24px;
+    padding-bottom: 5px;
   }
 }
 
@@ -37,6 +43,7 @@
 
   @media (max-width: $lg) {
     width: $c-6;
+    margin-bottom: 36px;
   }
 
   @media (max-width: $md) {

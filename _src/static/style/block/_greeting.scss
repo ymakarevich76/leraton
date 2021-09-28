@@ -1,0 +1,138 @@
+.greeting {
+  padding: 62px 0;
+
+  background-color: $c-grey;
+
+  @media (max-width: $xl) {
+    padding-top: 42px;
+    padding-bottom: 52px;
+  }
+
+  @media (max-width: $lg) {
+    padding-top: 52px;
+    padding-bottom: 27px;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 33px;
+    padding-bottom: 31px;
+  }
+}
+
+.greeting__title {
+  margin-bottom: 34px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 22px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 10px;
+  }
+}
+
+.greeting__text {
+  margin-bottom: 32px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #333;
+
+  @media (max-width: $lg) {
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+
+    font-size: 14px;
+  }
+
+  &--bold {
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    color: $c-main;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+
+    @media (max-width: $lg) {
+      margin-bottom: 26px;
+    }
+
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+}
+
+.greeting__text br {
+  display: block;
+
+  @media (max-width: $lg) {
+    display: none;
+  }
+}
+
+.greeting__wrap-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -7px !important;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+}
+
+.greeting__item {
+  width: calc(100% / 5 - 14px);
+  margin: 0 7px;
+  padding: 13px 10px 17px;
+
+  background-color: #5bac71;
+
+  &:not(:last-child) {
+    @media (max-width: $lg) {
+      margin-bottom: 9px;
+    }
+  }
+
+  @media (max-width: $xl) {
+    padding: 15px 10px 23px;
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin: 0;
+    padding: 7px 10px 8px;
+  }
+
+  @media (max-width: $md) {
+    padding-bottom: 11px;
+  }
+}
+
+.greeting__item-text {
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #fff;
+
+  @media (max-width: $xl) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $lg) {
+    font-size: $fz-main;
+  }
+
+  @media (max-width: $md) {
+    font-size: 14px;
+  }
+}

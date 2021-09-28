@@ -1,0 +1,199 @@
+.info {
+  padding-top: 76px;
+  padding-bottom: 75px;
+
+  background: url("../img/bc/3.png") no-repeat 0 0;
+  background-size: cover;
+
+  @media (max-width: $xl) {
+    padding-top: 56px;
+  }
+
+  @media (max-width: $lg) {
+    padding-top: 45px;
+    padding-bottom: 43px;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+}
+
+.info__wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+}
+
+.info__wrap-text {
+  width: calc(100% - 25% - 65px);
+  margin-right: 65px;
+
+  @media (max-width: $xl) {
+    width: calc(100% - 31% - 30px);
+    margin-right: 30px;
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 18px;
+  }
+}
+
+.info__text {
+  margin-bottom: 50px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #fff;
+
+  @media (max-width: $xl) {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+
+  @media (max-width: $lg) {
+    margin-bottom: 28px;
+
+    font-size: $fz-main;
+    line-height: 1.2;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 16px;
+
+    font-size: 14px;
+  }
+}
+
+.info__text-bold {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #fff;
+  text-transform: uppercase;
+
+  @media (max-width: $xl) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $lg) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 14px;
+  }
+
+  &--accent {
+    color: #5bac71;
+  }
+}
+
+.info__wrap-phone {
+  width: 25%;
+  padding-top: 5px;
+
+  @media (max-width: $xl) {
+    width: 31%;
+  }
+
+  @media (max-width: $lg) {
+    display: flex;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.info__phone {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  @media (max-width: $xl) {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: $lg) {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $md) {
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.info__phone-link {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: right;
+  color: #fff;
+
+  @media (max-width: $lg) {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  @media (max-width: $md) {
+    font-size: 19px;
+  }
+}
+
+.info__phone-text {
+  display: none;
+
+  @media (max-width: $md) {
+    display: inline-block;
+    margin: 0 5px;
+
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.2;
+    font-family: $ff-main;
+    color: #fff;
+  }
+}
+
+.info__wrap-btn {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: $lg) {
+    width: calc(100% - 50%);
+    margin-left: 30px;
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.info__btn {
+  @media (max-width: $xl) {
+    min-width: 100%;
+  }
+}

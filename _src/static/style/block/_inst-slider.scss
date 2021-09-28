@@ -1,0 +1,33 @@
+.inst-slider {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.inst-slider__link {
+  position: relative;
+
+  display: block;
+}
+
+.inst__slider-bc-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(59, 62, 69, .5);
+  visibility: hidden;
+  opacity: 0;
+
+  .inst-slider__link:hover & {
+    visibility: visible;
+    opacity: 1;
+  }
+}
