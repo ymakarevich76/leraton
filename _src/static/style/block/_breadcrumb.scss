@@ -1,9 +1,52 @@
 .breadcrumb {
   @extend .list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18px 0 25px;
+
+  @media (max-width: $xl) {
+    padding: 14px 0 25px;
+  }
 }
 
 .breadcrumb__item {
+  position: relative;
+
+  font-weight: 700;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  text-transform: uppercase;
+
+  &--current {
+    color: #919299;
+    white-space: nowrap;
+
+    @media (max-width: $lg) {
+      white-space: initial;
+    }
+  }
 }
 
 .breadcrumb__link {
+  padding-right: 20px;
+
+  font-weight: 700;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: #000;
+  text-transform: uppercase;
+
+  &::after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+    width: 12px;
+    height: 16px;
+
+    color: #919299;
+  }
 }

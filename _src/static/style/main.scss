@@ -18,7 +18,7 @@
 
 @import "block/header/header";
 @import "block/logo";
-// @import "block/breadcrumb";
+@import "block/breadcrumb";
 @import "block/title/title";
 
 
@@ -42,8 +42,9 @@
 @import "block/about-us";
 @import "block/advantage";
 @import "block/info";
-
 @import "block/map";
+@import "block/product";
+@import "block/tabs";
 
 
 @import "block/footer/footer";
