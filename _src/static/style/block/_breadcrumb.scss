@@ -8,6 +8,10 @@
   @media (max-width: $xl) {
     padding: 14px 0 25px;
   }
+
+  @media (max-width: $md) {
+    padding: 9px  0 12px;
+  }
 }
 
 .breadcrumb__item {
@@ -24,6 +28,10 @@
 
     @media (max-width: $lg) {
       white-space: initial;
+    }
+
+    @media (max-width: $md) {
+      line-height: 1.2;
     }
   }
 }

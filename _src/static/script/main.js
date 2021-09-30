@@ -4,5 +4,6 @@
 @@include('block/__swiper.js');
 @@include('block/__menu.js');
 @@include('block/__tabs.js');
+@@include('block/__accordion.js');
 
 @@include('block/__dynamicAdapt.js');

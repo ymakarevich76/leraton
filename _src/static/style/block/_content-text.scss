@@ -1,22 +1,42 @@
 .content-text {
-  h1 {
+  color: #666;
+}
+
+.content-text__desc {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #666;
+
+  @media (max-width: $md) {
+    font-size: 14px;
   }
 
-  h2 {
+  &:first-child {
+    margin-bottom: 20px;
+
+    @media (max-width: $md) {
+      margin-bottom: 15px;
+    }
   }
 
-  p {
+  &--bold {
+    font-weight: 700;
+    color: $c-main;
   }
 
-  a {
-    @extend .link;
-  }
+  &--accent {
+    margin-top: 38px;
 
-  ul {
-    @extend .list;
+    font-weight: 700;
+    font-size: 18px;
+    color: $c-red;
 
-    li {
-      @extend .list__item;
+    @media (max-width: $md) {
+      font-size: 16px;
     }
   }
 }

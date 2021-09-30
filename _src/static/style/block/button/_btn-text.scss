@@ -1,0 +1,21 @@
+.btn-text {
+  font-weight: 700;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #509365;
+  text-transform: uppercase;
+
+  @media (max-width: $md) {
+    font-size: 18px;
+  }
+
+  .tabs__btn--active & {
+    font-size: 24px;
+    color: $c-main;
+  }
+
+  .accordion__btn--active & {
+    color: $c-main;
+  }
+}

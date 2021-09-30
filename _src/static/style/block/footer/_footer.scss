@@ -6,14 +6,17 @@
 
   @media (max-width: $xl) {
     padding-top: 60px;
+    padding-bottom: 70px;
   }
 
   @media (max-width: $lg) {
     padding-top: 41px;
+    padding-bottom: 41px;
   }
 
   @media (max-width: $md) {
     padding-top: 31px;
+    padding-bottom: 31px;
   }
 }
 
@@ -109,6 +112,15 @@
   }
 }
 
+.footer__nav .nav__list {
+  @media (max-width: $md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .footer__nav .nav__item {
   &:not(:last-child) {
     margin-bottom: 19px;
@@ -166,6 +178,7 @@
   }
 
   @media (max-width: $md) {
+    align-items: center;
     margin-left: 0;
   }
 }
@@ -236,6 +249,7 @@
   }
 
   @media (max-width: $md) {
+    margin-right: 0;
     margin-bottom: 22px;
   }
 }
@@ -319,6 +333,10 @@
 
 .footer__copyright {
   margin-bottom: 40px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__copyright-text {
