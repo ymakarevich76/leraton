@@ -1,0 +1,60 @@
+.cart {
+}
+
+.cart__insert {
+  background: url("../img/bc/bc-cart.png") no-repeat center center;
+  background-size: cover;
+}
+
+.cart__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 5px 10px;
+
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.cart__total {
+  display: flex;
+  padding: 15px 0;
+}
+
+.cart__total-text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #232634;
+  text-transform: uppercase;
+}
+
+.cart__total-cost {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-red;
+}
+
+.cart__btn {
+  min-width: 224px;
+  padding: 14px;
+
+  font-size: 18px;
+
+  border-radius: 4px;
+}
+
+.cart__goods {
+  margin-bottom: 30px;
+}
+
+.cart__wrap-btn-continue {
+  margin-bottom: 60px;
+}

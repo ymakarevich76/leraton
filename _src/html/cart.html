@@ -1,0 +1,181 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+
+  <section class="cart">
+    <div class="cart__insert insert insert--second">
+      <div class="container">
+        <h1 class="insert__title title-1">корзина</h1>
+      </div>
+      <!--/container-->
+    </div>
+    @@include('block/breadcrumb.html')
+
+    <div class="container">
+      <div class="cart__top">
+        <div class="cart__total">
+          <p class="cart__total-text">ИТОГО:</p>
+          <div class="cart__total-cost">7 346 руб</div>
+        </div>
+        <div class="cart__wrap-btn">
+          <button type="button" class="cart__btn btn btn-reset">Оформить заказ</button>
+        </div>
+      </div>
+      <div class="cart__goods">
+        <div class="cart__good good card">
+          <div class="good__wrap-img card__wrap-img">
+            <img src="static/img/product/2.png" alt="Nanolex SiSpray">
+          </div>
+          <div class="good__desc card__info">
+            <h3 class="good__title card__title">Nanolex SiSpray. Высокотехнологичный спрей- силант для ЛКП, с
+              долгосрочным защитным
+              эффектом.
+              <span class="good__title-module card__title-module">750мл NXSiSPR007</span>
+            </h3>
+            <p class="good__cost card__cost">5 246 руб. / шт</p>
+          </div>
+          <div class="good__info-cost">
+            <div class="good__add-cart add-cart">
+              <div class="add-cart__count">
+                <p class="add-cart__count-num">1</p>
+                <div class="add-cart__count-control">
+                  <button class="add-cart__count-btn active btn-reset">+</button>
+                  <button class="add-cart__count-btn btn-reset">&ndash;</button>
+                </div>
+              </div>
+              <p class="good__add-cart-cost add-cart__cost">
+                5 246 руб.
+              </p>
+              <div class="good__wrap-btn">
+                <button type="button" class="good__btn-close btn btn-reset">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__good good card">
+          <div class="good__wrap-img card__wrap-img">
+            <img src="static/img/product/4.png" alt="Paradise Air">
+          </div>
+          <div class="good__desc card__info">
+            <h3 class="card__title">Paradise Air Ароматизатор для автомобиля/ дома Exotic Cotton (Экзотический Хлопок)
+            </h3>
+            <p class="good__cost card__cost">360 руб. / шт</p>
+          </div>
+          <div class="good__info-cost">
+            <div class="good__add-cart add-cart">
+              <div class="add-cart__count">
+                <p class="add-cart__count-num">5</p>
+                <div class="add-cart__count-control">
+                  <button class="add-cart__count-btn active btn-reset">+</button>
+                  <button class="add-cart__count-btn btn-reset">&ndash;</button>
+                </div>
+              </div>
+              <p class="good__add-cart-cost add-cart__cost">
+                1 800 руб.
+              </p>
+              <div class="good__wrap-btn">
+                <button type="button" class="good__btn-close btn btn-reset">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__good good card">
+          <div class="good__wrap-img card__wrap-img">
+            <img src="static/img/product/1.png" alt="Paradise Air">
+          </div>
+          <div class="good__desc card__info">
+            <h3 class="card__title">Uzlex Салфетка "Clean-UP" в рулоне,
+              <span class="card__title-module">330 мм х 20 м 21910989</span>
+            </h3>
+            <p class="good__cost card__cost">300 руб. / шт</p>
+          </div>
+          <div class="good__info-cost">
+            <div class="good__add-cart add-cart">
+              <div class="add-cart__count">
+                <p class="add-cart__count-num">5</p>
+                <div class="add-cart__count-control">
+                  <button class="add-cart__count-btn active btn-reset">+</button>
+                  <button class="add-cart__count-btn btn-reset">&ndash;</button>
+                </div>
+              </div>
+              <p class="good__add-cart-cost add-cart__cost">
+                300 руб.
+              </p>
+              <div class="good__wrap-btn">
+                <button type="button" class="good__btn-close btn btn-reset">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart__wrap-btn-continue">
+        <button type="button" class="cart__btn btn btn-reset">продолжить покупки</button>
+      </div>
+    </div>
+    <!--/container-->
+  </section>
+
+  <section class="checkout">
+    <div class="container">
+      <h2 class="checkout__title title-2">Оформить заказ</h2>
+      <form action="" class="checkout__form">
+        <div class="checkout__info">
+          <div class="checkout__col">
+            <input type="text" class="checkout__input" placeholder="Ваша фамилия">
+            <input type="email" class="checkout__input" placeholder="Email">
+            <select name="" id="" class="checkout__item">
+              <option value="Самовывоз" selected>Самовывоз</option>
+            </select>
+          </div>
+          <div class="checkout__col">
+            <input type="text" class="checkout__input" placeholder="Ваше имя">
+            <select name="" id="" class="checkout__item">
+              <option value="Город" selected>Город</option>
+            </select>
+
+            <select name="" id="" class="checkout__item">
+              <option value="Безналичный расчет для юр.лиц" selected>Безналичный расчет для юр.лиц</option>
+            </select>
+          </div>
+          <div class="checkout__col">
+            <input type="tel" class="checkout__input checkout__input--phone" placeholder="+7  (495) - "
+              value="+7  (495) -">
+            <input type="text" class="checkout__input" placeholder="Адрес">
+            <input type="text" class="checkout__input" placeholder="Промокод">
+          </div>
+        </div>
+        <textarea class="checkout__comments" name="" id="" cols="15" rows="10"
+          placeholder="Комментарий к заказу"></textarea>
+        <div class="checkout__agree">
+          <input id="agree" type="checkbox" class="checkout__check" checked>
+          <label for="agree" class="checkout__checkbox">
+          </label>
+          <p class="checkout__checkbox-text">Согласен <span
+              class="checkout__checkbox-text checkout__checkbox-text--accent">на обработку персональных данных.</span>
+          </p>
+        </div>
+
+        <div class="checkouts__btn"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

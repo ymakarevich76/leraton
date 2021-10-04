@@ -1,0 +1,150 @@
+.checkout {
+}
+
+.checkout__title {
+  margin-bottom: 20px;
+}
+
+.checkout__form {
+}
+.checkout__info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px !important;
+}
+
+.checkout__col {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 30px);
+  margin: 0 15px;
+}
+
+.checkout__input {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+
+  background-color: #f8f8f8;
+  border: 1px solid rgb(211, 211, 211);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: $fz-main;
+    line-height: 1.2;
+    font-family: $ff-main;
+    color: #666;
+  }
+
+  &--phone {
+    font-weight: 700;
+    color: $c-main;
+
+    &::placeholder {
+      font-weight: 700;
+      color: $c-main;
+    }
+  }
+}
+
+.checkout__item {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+
+  background-color: #f8f8f8;
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.checkout__contacts .checkout__input {
+  margin-right: 0;
+}
+
+
+.checkout__comments {
+}
+
+.checkout__comments {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 20px 15px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+
+  border: 1px solid rgb(211, 211, 211);
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: $fz-main;
+    line-height: 1.2;
+    font-family: $ff-main;
+    color: #666;
+  }
+}
+
+.checkout__agree {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.checkout__check {
+  opacity: 0;
+}
+
+.checkout__check + label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+
+    border: 1px solid  rgb(211, 211, 211);
+    transform: translate(0, -50%);
+  }
+}
+
+.checkout__check:checked + label::before {
+  background: url("../img/icon/check-solid.svg") no-repeat;
+  background-color: transparent;
+  border-color: $c-main;
+}
+
+.checkout__checkbox-text {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+
+  &--accent {
+    color: $c-accent;
+  }
+}

@@ -7,3 +7,4 @@
 @@include('block/__accordion.js');
 
 @@include('block/__dynamicAdapt.js');
+@@include('block/__range.js');

@@ -1,8 +1,14 @@
 .menu {
+  &--active {
+  }
 }
 
 .menu__list {
   display: flex;
+
+  @media (max-width: $xl) {
+    flex-direction: column;
+  }
 }
 
 .menu__item {
@@ -11,6 +17,11 @@
   &:hover .sub-menu {
     visibility: visible;
     opacity: 1;
+  }
+
+  @media (max-width: $xl) {
+    margin-bottom: 15px;
+    padding-bottom: 0;
   }
 }
 
@@ -26,5 +37,37 @@
   &:hover {
     color: $c-red;
     text-decoration: none;
+  }
+
+  @media (max-width: $xl) {
+    position: relative;
+
+    font-size: 24px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -15px;
+
+      width: 12px;
+      height: 7px;
+
+      background: url("../img/icon/chevron-down.svg") no-repeat center center;
+      background-size: 100%;
+      transform: translate(0, -50%);
+
+      transition: .2s;
+    }
+
+    &--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  @media (max-width: $md) {
+    font-size: 15px;
   }
 }

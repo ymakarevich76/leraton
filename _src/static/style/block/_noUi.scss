@@ -1,0 +1,33 @@
+.noUi-target {
+  margin-bottom: 10px;
+
+  background: #e6e7e9;
+}
+
+.noUi-horizontal {
+  height: 6px;
+}
+
+.noUi-connect {
+  background-color: #c6dacb;
+}
+
+.noUi-horizontal .noUi-handle {
+  position: absolute;
+  top: 50%;
+  right: -8px;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: #040504;
+  border: 8px solid #040504;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    background: transparent;
+  }
+}

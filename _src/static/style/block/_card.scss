@@ -46,6 +46,43 @@
       }
     }
   }
+
+  &--list {
+    flex-direction: row;
+    width: 100%;
+    padding: 15px;
+
+    &:hover {
+      background-color: rgba(102, 102, 102, .5);
+
+      .card__cost {
+        color: #fff;
+      }
+
+      .card__buy-btn {
+        background-color: $c-red;
+      }
+    }
+
+    &::after {
+      top: 20px;
+      right: 83%;
+    }
+  }
+}
+
+.card--list.card--not {
+  &:hover {
+    background-color: transparent;
+
+    .card__cost {
+      color: $c-accent;
+    }
+
+    .card__buy-btn {
+      background-color: #f8f8f8;
+    }
+  }
 }
 
 .card__wrap-img {
@@ -65,10 +102,53 @@
   @media (max-width: $md) {
     margin-bottom: 5px;
   }
+
+  .card--list & {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .card__wrap-img img {
   margin: 0 auto;
+}
+
+.card__wrap-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__desc {
+  display: none;
+  .card--list & {
+    display: inline-block;
+    flex-grow: 1;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: $fz-main;
+    line-height: 1.2;
+    font-family: $ff-main;
+    color: #666;
+  }
+}
+
+.card__available {
+  display: none;
+  .card--list & {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    font-weight: 400;
+    font-size: $fz-main;
+    line-height: 1.2;
+    font-family: $ff-main;
+    color: $c-accent;
+
+    &--not {
+      color: $c-red;
+    }
+  }
 }
 
 .card__img-buy {
@@ -113,6 +193,18 @@
 
   @media (max-width: $md) {
     margin-top: 0;
+  }
+
+  .card--list & {
+    position: relative;
+
+    justify-content: flex-start;
+    height: auto;
+    padding: 0;
+
+    background-color: transparent;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -225,6 +317,16 @@
 
     font-size: 15px;
   }
+
+  .card--list & {
+    background-color: $c-accent;
+
+    &--disabled {
+      color: #ccc;
+
+      background-color: #f8f8f8;
+    }
+  }
 }
 
 .card__cart-word {
@@ -250,6 +352,11 @@
   @media (max-width: $md) {
     font-size: 14px;
   }
+
+  .card--list & {
+    flex-grow: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .card__title-module {
@@ -265,9 +372,14 @@
   font-size: 24px;
   line-height: 1.2;
   font-family: $ff-main;
-  color: #539b68;
+  color: $c-accent;
 
   @media (max-width: $md) {
     font-size: 18px;
+  }
+
+  .card--list & {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 }

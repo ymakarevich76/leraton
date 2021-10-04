@@ -10,11 +10,13 @@
 }
 
 .accordion__btn {
-  position: relative;
+  @media (max-width: $xl) {
+    position: relative;
 
-  width: 100%;
+    width: 100%;
 
-  text-align: left;
+    text-align: left;
+  }
 
   @media (max-width: $md) {
     padding-top: 4px;
@@ -51,6 +53,10 @@
 }
 
 .accordion__btn--active + * {
+  @media (max-width: $xl) {
+    display: block;
+  }
+
   @media (max-width: $md) {
     display: block;
     padding-bottom: 45px;
@@ -60,3 +66,4 @@
 .accordion__content {
   padding-top: 25px;
 }
+

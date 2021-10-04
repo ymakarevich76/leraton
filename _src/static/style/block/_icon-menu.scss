@@ -1,90 +1,48 @@
-.icon__menu {
+.icon__menu,
+.icon__close {
   display: none;
 
   @media (max-width: $xl) {
     position: absolute;
-    top: 28px;
-    right: 58px;
+    top: 12px;
+    right: 24px;
     z-index: 10;
 
     display: block;
     width: 32px;
     height: 29px;
 
+    background-size: 100%;
     cursor: pointer;
   }
 
   @media (max-width: $lg) {
-    top: 20px;
-    right: 38px;
+    top: 4px;
+    right: 14px;
   }
 
   @media (max-width: $md) {
-    top: 20px;
+    top: 5px;
     right: 10px;
   }
-
-  &::before,
-  &::after {
-    @media (max-width: $xl) {
-      content: "";
-      position: absolute;
-      left: 0;
-
-      width: 100%;
-      height: 5px;
-
-      background-color: #fff;
-
-      transition: .3s;
-    }
-  }
-
-  &::before {
-    @media (max-width: $xl) {
-      top: 0;
-    }
-  }
-
-  &::after {
-    @media (max-width: $xl) {
-      bottom: 0;
-    }
-  }
 }
 
-.icon__menu span {
+.icon__menu {
   @media (max-width: $xl) {
-    position: absolute;
-    top: 50%;
-    left: 0;
+    background: url("../img/icon/burger.png") no-repeat;
 
-    width: 100%;
-    height: 5px;
-
-    background-color: #fff;
-    transform: scale(1) translate(0, -50%);
-
-    transition: .3s;
+    &--active {
+      display: none;
+    }
   }
 }
 
-.icon__menu.active span {
-  transform: scale(0);
-}
+.icon__close {
+  @media (max-width: $xl) {
+    background: url("../img/icon/close.svg") no-repeat;
+  }
 
-.icon__menu.active::before {
-  top: 35%;
-
-  transform: rotate(45deg) translate(0, -50%);
-}
-
-.icon__menu.active::after {
-  bottom: 50%;
-
-  transform: rotate(-45deg) translate(0, -50%);
-}
-
-.icon__arrow {
-  display: none;
+  @media (max-width: $md) {
+    top: 12px;
+  }
 }

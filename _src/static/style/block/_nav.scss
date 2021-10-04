@@ -1,7 +1,14 @@
 .nav__list {
+  @media (max-width: $lg) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .nav__item {
+  @media (max-width: $lg) {
+    margin-bottom: 30px;
+  }
 }
 
 .nav__link {
@@ -12,6 +19,14 @@
   text-transform: uppercase;
 
   transition: .3s;
+
+  @media (max-width: $lg) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 15px;
+  }
 
   &:hover {
     color: $c-accent;

@@ -1,0 +1,49 @@
+.pagination {
+}
+
+.pagination__pages {
+  display: flex;
+}
+
+.pagination__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  background-color: #232634;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:last-child {
+    background-color: $c-main;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    background-color: #919299;
+  }
+
+  &--current {
+    background-color: #919299;
+  }
+}
+
+.pagination__num {
+  font-weight: 700;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #fff;
+}
+
+.pagination__page svg {
+  width: 7px;
+  height: 12px;
+
+  fill: #fff;
+}

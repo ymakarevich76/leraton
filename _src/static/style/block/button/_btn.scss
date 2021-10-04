@@ -10,5 +10,9 @@
   color: #fff;
   text-transform: uppercase;
 
-  background-color: $c-red;
+  background-color: $c-accent;
+
+  &--accent {
+    background-color: $c-red;
+  }
 }

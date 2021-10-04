@@ -57,4 +57,9 @@
 
     color: #919299;
   }
+
+  &:hover {
+    color: $c-main;
+    text-decoration: none;
+  }
 }

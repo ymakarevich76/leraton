@@ -165,12 +165,21 @@
   padding-left: 190px;
 
   @media (max-width: $xl) {
-    display: none;
+    padding-left: 160px;
+  }
+
+  @media (max-width: $md) {
+    padding-bottom: 0;
+    padding-left: 0;
   }
 }
 
 .header__nav {
   margin-right: auto;
+
+  @media (max-width: $md) {
+    display: none;
+  }
 }
 
 .header__nav.active {
@@ -296,6 +305,11 @@
 .header__cart {
   display: flex;
   align-items: center;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .header__cart svg {
@@ -330,7 +344,23 @@
   background-color: $c-grey;
 
   @media (max-width: $xl) {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 450;
+
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    background-color: $c-grey;
+    transform: translate(100%, 0);
+
+    transition: .3s;
+
+    &--active {
+      transform: translate(0, 0);
+    }
   }
 }
 
@@ -345,10 +375,18 @@
 
 .header__menu .menu__list {
   padding-left: 190px;
+
+  @media (max-width: $xl) {
+    padding-left: 0;
+  }
 }
 
 .header__menu .menu__item {
   &:not(:last-child) {
     margin-right: auto;
+
+    @media (max-width: $xl) {
+      margin-right: 0;
+    }
   }
 }

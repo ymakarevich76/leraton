@@ -63,13 +63,14 @@
           </button>
         </div>
       </div>
-    </div>
 
+      <button class="header__icon-menu icon__menu btn-reset"></button>
+    </div>
 
     <!--/header-top-->
 
     <div class="header__bottom">
-      <nav class="header__nav nav">
+      <nav data-da=".header__menu-container,992, last" class="header__nav nav">
         <ul class="nav__list list-reset">
           <li class="nav__item">
             <a href="#" class="nav__link">О компании</a>
@@ -78,7 +79,7 @@
             <a href="#" class="nav__link">Клиентам</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Каталог</a>
+            <a href="catalog.html" class="nav__link">Каталог</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link">Оплата и Доставка</a>
@@ -100,32 +101,32 @@
             <use xlink:href="static/img/symbol/sprite.svg#user"></use>
           </svg>
         </button>
-        <button class="header__cart btn-reset" type="button">
+        <a href="cart.html" class="header__cart" type="button">
           <svg aria-hidden="true">
             <use xlink:href="static/img/symbol/sprite.svg#cart"></use>
           </svg>
           <span class="header__cart-count">0</span>
-        </button>
+        </a>
       </div>
     </div>
 
   </div>
-
-  <div class="header__icon-menu icon__menu">
-    <span></span>
-  </div>
   <!--/container-->
 
+
   <nav class="header__menu menu">
-    <ul class="header__menu-container">
+    <button class="header__icon-close icon__close btn-reset">
+    </button>
+    <div class="header__menu-container">
       <ul class="menu__list list-reset">
         <li class="menu__item">
           <a href="#" class="menu__link">МОЙКА И УХОД</a>
           <div class="sub-menu">
             <div class="sub-menu__container">
-              <div class="sub-menu__row">
-                <div class="sub-menu__col">
-                  <h2 class="sub-menu__title">Мойка</h2>
+              <ul class="sub-menu__row list-reset">
+                <li class="sub-menu__col">
+                  <a href="#" class="sub-menu__title">Мойка
+                  </a>
                   <ul class="sub-menu__list list-reset">
                     <li class="sub-menu__item">
                       <a href="#" class="sub-menu__link">Ручная мойка</a>
@@ -146,9 +147,11 @@
                       <a href="#" class="sub-menu__link">Уход за лодками и яхтами</a>
                     </li>
                   </ul>
-                </div>
-                <div class="sub-menu__col">
-                  <h2 class="sub-menu__title">Экстерьер</h2>
+                </li>
+
+                <li class="sub-menu__col">
+                  <a href="#" class="sub-menu__title">Экстерьер
+                  </a>
                   <ul class="sub-menu__list list-reset">
                     <li class="sub-menu__item">
                       <a href="#" class="sub-menu__link">Очистка кузова</a>
@@ -169,9 +172,10 @@
                       <a href="#" class="sub-menu__link">Полировочная глина</a>
                     </li>
                   </ul>
-                </div>
-                <div class="sub-menu__col">
-                  <h2 class="sub-menu__title">Интерьер</h2>
+                </li>
+                <li class="sub-menu__col">
+                  <a href="#" class="sub-menu__title">Интерьер
+                  </a>
                   <ul class="sub-menu__list list-reset">
                     <li class="sub-menu__item">
                       <a href="#" class="sub-menu__link">Очистка и уход за тканью</a>
@@ -189,9 +193,10 @@
                       <a href="#" class="sub-menu__link">Реставрация кожи</a>
                     </li>
                   </ul>
-                </div>
-                <div class="sub-menu__col">
-                  <h2 class="sub-menu__title">Освежители воздуха</h2>
+                </li>
+                <li class="sub-menu__col">
+                  <a href="#" class="sub-menu__title">Освежители воздуха
+                  </a>
                   <ul class="sub-menu__list list-reset">
                     <li class="sub-menu__item">
                       <a href="#" class="sub-menu__link">Освежители воздуха подвесные</a>
@@ -203,8 +208,8 @@
                       <a href="#" class="sub-menu__link">Освежители воздуха сухие и гелевые</a>
                     </li>
                   </ul>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
             <!--/sub-menu__container-->
           </div>
@@ -235,7 +240,7 @@
           <a href="#" class="menu__link">БРЕНДЫ</a>
         </li>
       </ul>
-      </div>
+    </div>
   </nav>
 
 </header>
