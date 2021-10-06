@@ -8,6 +8,7 @@
 
   @media (max-width: $xl) {
     flex-direction: column;
+    // align-items: flex-start;
   }
 }
 
@@ -23,6 +24,10 @@
     margin-bottom: 15px;
     padding-bottom: 0;
   }
+}
+
+.menu__wrap-link-btn {
+
 }
 
 .menu__link {
@@ -43,31 +48,33 @@
     position: relative;
 
     font-size: 24px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: -15px;
-
-      width: 12px;
-      height: 7px;
-
-      background: url("../img/icon/chevron-down.svg") no-repeat center center;
-      background-size: 100%;
-      transform: translate(0, -50%);
-
-      transition: .2s;
-    }
-
-    &--active {
-      &::after {
-        transform: rotate(180deg);
-      }
-    }
   }
 
   @media (max-width: $md) {
     font-size: 15px;
+  }
+}
+
+
+.btn-chevron {
+  display: none;
+
+  @media (max-width: $xl) {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 14px;
+      height: 14px;
+      transition: .3s;
+
+      .menu__wrap-link-btn__active & {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
