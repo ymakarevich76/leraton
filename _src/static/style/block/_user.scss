@@ -1,0 +1,34 @@
+.user {
+  height: auto;
+
+  background: url("../img/bc/bc-empty.jpg") no-repeat;
+  background-size: cover;
+}
+
+.user__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (max-width: $md) {
+    padding: 0;
+  }
+}
+
+.user__wrap {
+  display: flex;
+  width: 100%;
+  padding: 50px 30px;
+
+  background-color: rgba(222, 215, 222, .9);
+  border-radius: 20px;
+
+  @media (max-width: $md) {
+    padding: 40px 10px;
+
+    border-radius: 0;
+  }
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,85 @@
+.problem {
+  margin-bottom: 20px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 20px;
+  }
+}
+
+.problem__insert {
+  background: url("../img/bc/bc-help.png") no-repeat center center;
+  background-size: cover;
+}
+
+.problem__card-wrap {
+}
+
+.problem__card {
+  display: flex;
+  flex-direction: column;
+  width: $c-3;
+  margin-bottom: 35px;
+
+  box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+
+  @media (max-width: $lg) {
+    width: $c-4;
+  }
+
+  @media (max-width: $md) {
+    width: $c-12;
+    margin-bottom: 20px;
+  }
+}
+
+.problem__card-top {
+  position: relative;
+
+  &:hover .problem__item-title {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}
+
+.problem__wrap-img {
+  display: flex;
+  justify-content: center;
+}
+
+.problem__wrap-img img {
+  @media (max-width: $md) {
+    width: 100%;
+    height: 60px;
+  }
+}
+
+.problem__item-title {
+  position: absolute;
+  bottom: 10px;
+
+  padding: 0 15px;
+
+  color: #fff;
+}
+
+.problem__list {
+  padding: 20px 15px;
+}
+
+
+.problem__link {
+  font-weight: 700;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}

@@ -14,6 +14,12 @@
   padding: 5px 10px;
 
   border: 1px solid rgb(211, 211, 211);
+
+  @media (max-width: $md) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 15px;
+  }
 }
 
 .cart__total {
@@ -30,6 +36,7 @@
   font-family: $ff-main;
   color: #232634;
   text-transform: uppercase;
+  white-space: pre-wrap;
 }
 
 .cart__total-cost {
@@ -42,6 +49,13 @@
   color: $c-red;
 }
 
+.cart__wrap-btn {
+  @media (max-width: $md) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .cart__btn {
   min-width: 224px;
   padding: 14px;
@@ -49,6 +63,10 @@
   font-size: 18px;
 
   border-radius: 4px;
+
+  @media (max-width: $md) {
+    min-width: 278px;
+  }
 }
 
 .cart__goods {
