@@ -72,7 +72,7 @@
       height: 14px;
       transition: .3s;
 
-      .menu__wrap-link-btn__active & {
+      .active & {
         transform: rotate(180deg);
       }
     }

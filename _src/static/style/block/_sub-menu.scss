@@ -20,7 +20,7 @@
     visibility: visible;
     opacity: 1;
 
-    .menu__wrap-link-btn__active + & {
+    .active + & {
       display: block;
     }
   }
@@ -48,6 +48,10 @@
 .sub-menu__col {
   width: calc(100% / 4 - 40px);
   margin: 0 20px;
+
+  @media (max-width: $xl) {
+    width: 100%;
+  }
 }
 
 .sub-menu__title {
@@ -95,7 +99,7 @@
   @media (max-width: $xl) {
     display: none;
 
-    .sub-menu__wrap-link-btn--active + & {
+    .active + & {
       display: block;
     }
   }
