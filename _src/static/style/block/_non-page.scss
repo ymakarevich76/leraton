@@ -1,16 +1,8 @@
 .non-page {
-  height: 440px;
+  height: auto;
 
-  background: url("../img/bc/bc-404.jpg") no-repeat;
+  background: url("../img/bc/bc-empty.jpg") no-repeat;
   background-size: cover;
-
-  @media (max-width: $xl) {
-    height: 452px;
-  }
-
-  @media (max-width: $md) {
-    height: auto;
-  }
 }
 
 .non-page__container {

@@ -1,6 +1,4 @@
 .header {
-  position: relative;
-
   padding-top: 20px;
 
   background-color: #232634;
@@ -13,31 +11,35 @@
   @media (max-width: $lg) {
     padding-bottom: 2px;
   }
+}
+
+.header__container {
+  position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    top: 78px;
-    right: 37%;
+    top: 60px;
+    right: 30px;
 
     display: block;
-    width: 63%;
-    height: 2px;
+    width: 79%;
+    height: 1px;
 
     background-color: $c-accent;
 
     @media (max-width: $xl) {
-      top: 73px;
-      right: 0;
+      top: 60px;
+      right: 15px;
 
       width: 80%;
     }
 
     @media (max-width: $lg) {
-      top: 67px;
-      right: 40px;
+      top: 52px;
+      right: 15px;
 
-      width: 70%;
+      width: 75%;
     }
 
     @media (max-width: $md) {
@@ -46,9 +48,6 @@
       width: calc(100% - 20px);
     }
   }
-}
-
-.header__container {
 }
 
 .header__top {

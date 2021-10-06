@@ -1,0 +1,16 @@
+.item {
+  margin-bottom: 60px;
+
+  @media (max-width: $xl) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 40px;
+  }
+}
+
+.item__insert {
+  background: url("../img/bc/bc-polish.png") no-repeat center center;
+  background-size: cover;
+}

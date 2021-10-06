@@ -1,0 +1,64 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  <section class="user">
+    <div class="user__container container">
+      <div class="user__wrap">
+        <div class="user__tabs tabs-user">
+          <div class="tabs-user__box-btn">
+            <h2 class="tabs-user__title title-2">Личный кабинет</h2>
+            <button class="tabs-user__btn btn tabs-user__btn--active btn-reset">информация профиля</button>
+            <button class="tabs-user__btn btn btn-reset">плательщик</button>
+            <button class="tabs-user__btn btn btn-reset">ваши скидки</button>
+            <button class="tabs-user__btn btn btn-reset">ваши покупки</button>
+          </div>
+          <!--/tabs-user__box-btn-->
+
+          <div class="tabs-user__box-content">
+            <div class="tabs-user__content tabs-user__content--active">
+              <form action="" class="tabs-user__form form">
+                <h2 class="form__title title-2">информация профиля</h2>
+                <div class="form__wrap-name">
+                  <input type="text" class="form__input form__input--name" placeholder="Имя" required>
+                  <input type="text" class="form__input form__input--surname" placeholder="Фамилия">
+                </div>
+                <input type="email" class="form__input" placeholder="Email" required>
+                <input type="tel" class="form__input" id="phone-2" placeholder="Телефон" required>
+                <input type="text" class="form__input form__input--company" placeholder="Название компании">
+                <input type="text" class="form__input" placeholder="Город">
+                <input type="text" class="form__input" placeholder="Адрес">
+                <input type="password" class="form__input" placeholder="Новый пароль" required>
+                <input type="password" class="form__input" placeholder="повтор пароля" required>
+                <div class="form__btn-wrap">
+                  <button type="submit" class="form__btn btn btn-reset">сохранить</button>
+                </div>
+              </form>
+            </div>
+            <div class="tabs-user__content">
+              <div class="tabs-user__info">
+                Вторая вкладка
+              </div>
+            </div>
+            <div class="tabs-user__content">
+              <div class="tabs-user__info">
+                Третья вкладка
+              </div>
+            </div>
+            <div class="tabs-user__content">
+              <div class="tabs-user__info">
+                Четвёртая вкладка
+              </div>
+            </div>
+          </div>
+          <!--/tabs-user__box-content-->
+        </div>
+
+
+      </div>
+    </div>
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

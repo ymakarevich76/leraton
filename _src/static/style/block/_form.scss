@@ -1,0 +1,76 @@
+.form {
+}
+
+.form__title {
+  margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    font-size: 24px;
+  }
+}
+
+.form__wrap-name {
+  display: flex;
+}
+
+.form__input {
+  padding-top: 10px;
+  padding-bottom: 25px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $c-main;
+
+  &--name {
+    text-transform: capitalize;
+  }
+
+  &--surname {
+    padding-left: 15px;
+
+    text-transform: capitalize;
+
+    border-left: 1px solid $c-main;
+  }
+
+  &--company {
+    text-transform: uppercase;
+  }
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: $ff-main;
+    color: #666;
+    text-transform: uppercase;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form__wrap-name .form__input {
+  width: 50%;
+  padding-top: 0;
+}
+
+.form__btn-wrap {
+  margin-top: 35px;
+}
+
+.form__btn {
+  min-width: 130px;
+  padding: 14px;
+
+  font-size: 18px;
+
+  border-radius: 4px;
+}
