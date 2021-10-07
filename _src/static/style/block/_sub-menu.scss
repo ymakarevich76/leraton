@@ -16,8 +16,13 @@
   @media (max-width: $xl) {
     position: relative;
     top: 0;
-
     display: none;
+    visibility: visible;
+    opacity: 1;
+
+    .active + & {
+      display: block;
+    }
   }
 }
 
@@ -43,6 +48,10 @@
 .sub-menu__col {
   width: calc(100% / 4 - 40px);
   margin: 0 20px;
+
+  @media (max-width: $xl) {
+    width: 100%;
+  }
 }
 
 .sub-menu__title {
@@ -83,33 +92,16 @@
     display: inline-block;
 
     font-size: 24px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: -15px;
-
-      width: 12px;
-      height: 7px;
-
-      background: url("../img/icon/chevron-down.svg") no-repeat center center;
-      background-size: 100%;
-      transform: translate(0, -50%);
-
-      transition: .2s;
-    }
-
-    &--active {
-      &::after {
-        transform: rotate(180deg);
-      }
-    }
   }
 }
+
 .sub-menu__list {
   @media (max-width: $xl) {
     display: none;
+
+    .active + & {
+      display: block;
+    }
   }
 }
 

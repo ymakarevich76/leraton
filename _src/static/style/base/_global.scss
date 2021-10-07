@@ -22,7 +22,7 @@ img {
 
 // input auto-complete change color
 :-webkit-autofill {
-  box-shadow: 0 0 100px #fff inset;
+  box-shadow: 0 0 100px rgba(222, 215, 222, .9) inset;
 
   -webkit-text-fill-color: currentColor;
 }
