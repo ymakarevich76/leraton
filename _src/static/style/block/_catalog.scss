@@ -7,19 +7,28 @@
 }
 
 .catalog__wrap {
-  &--grid {
-    // display: none;
+  display: none;
+
+  // &--list {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  // &--grid {
+  //   display: flex;
+  // }
+
+  &--active {
+    display: flex;
   }
 
-  &--list {
-    display: none;
-    flex-direction: column;
-  }
+  // &:nth-child(2) {
+  //   flex-direction: column;
+  // }
 }
 
 .catalog__insert {
   background: url("../img/bc/catalog.png") no-repeat center center;
-
   background-size: cover;
 }
 

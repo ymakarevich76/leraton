@@ -6,8 +6,10 @@
 }
 
 .nav__item {
-  @media (max-width: $lg) {
-    margin-bottom: 30px;
+  &:not(:last-child) {
+    @media (max-width: $lg) {
+      margin-bottom: 15px;
+    }
   }
 }
 

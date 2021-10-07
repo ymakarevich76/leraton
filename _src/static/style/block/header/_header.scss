@@ -175,10 +175,6 @@
 
 .header__nav {
   margin-right: auto;
-
-  @media (max-width: $md) {
-    display: none;
-  }
 }
 
 .header__nav.active {
@@ -360,6 +356,10 @@
     &--active {
       transform: translate(0, 0);
     }
+  }
+
+  @media (max-width: $lg) {
+    padding-bottom: 15px;
   }
 }
 

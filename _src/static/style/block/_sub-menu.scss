@@ -16,7 +16,9 @@
   @media (max-width: $xl) {
     position: relative;
     top: 0;
+
     display: none;
+
     visibility: visible;
     opacity: 1;
 
@@ -93,6 +95,10 @@
 
     font-size: 24px;
   }
+
+  @media (max-width: $md) {
+    font-size: 15px;
+  }
 }
 
 .sub-menu__list {
@@ -101,6 +107,7 @@
 
     .active + & {
       display: block;
+      padding-left: 15px;
     }
   }
 }
@@ -117,6 +124,10 @@
 
   @media (max-width: $xl) {
     font-size: 24px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 15px;
   }
 
   &:hover {

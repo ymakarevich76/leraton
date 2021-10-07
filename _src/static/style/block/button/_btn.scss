@@ -12,7 +12,17 @@
 
   background-color: $c-accent;
 
+  transition: .3s;
+
+  &:hover {
+    background-color: #396b48;
+  }
+
   &--accent {
     background-color: $c-red;
+
+    &:hover {
+      background-color: #ac2121;
+    }
   }
 }

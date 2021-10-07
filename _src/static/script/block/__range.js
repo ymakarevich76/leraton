@@ -1,4 +1,4 @@
-var snapSlider = document.getElementById('slider-snap');
+const snapSlider = document.getElementById('slider-snap');
 
 noUiSlider.create(snapSlider, {
   start: [500, 50000],

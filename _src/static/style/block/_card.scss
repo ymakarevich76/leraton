@@ -50,7 +50,15 @@
   &--list {
     flex-direction: row;
     width: 100%;
-    padding: 15px;
+
+    @media (max-width: $lg) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
 
     &:hover {
       background-color: rgba(102, 102, 102, .5);
@@ -66,7 +74,28 @@
 
     &::after {
       top: 20px;
-      right: 83%;
+      right: 76%;
+
+      @media (max-width: $lg) {
+        right: 71%;
+      }
+
+      @media (max-width: $md) {
+        right: 51%;
+      }
+    }
+
+    .card__title,
+    .card__available,
+    .card__cost {
+      @media (max-width: $lg) {
+        padding-left: 15px;
+      }
+
+      @media (max-width: $md) {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
     }
   }
 }
@@ -104,18 +133,56 @@
   }
 
   .card--list & {
-    margin-right: 30px;
+    width: 25%;
+    height: 260px;
     margin-bottom: 0;
+
+    @media (max-width: $lg) {
+      width: 30%;
+    }
+
+    @media (max-width: $md) {
+      width: 50%;
+    }
   }
 }
 
 .card__wrap-img img {
   margin: 0 auto;
+
+  .card--list & {
+    @media (max-width: $md) {
+      height: 210px;
+      margin-bottom: auto;
+    }
+
+    @media (max-width: 456px) {
+      height: auto;
+    }
+  }
 }
 
 .card__wrap-info {
   display: flex;
   flex-direction: column;
+
+  .card--list & {
+    width: calc(100% - 25%);
+    padding: 15px 0 15px 30px;
+
+    border: 1px solid rgb(211, 211, 211);
+
+    @media (max-width: $lg) {
+      justify-content: space-between;
+      width: calc(100% - 30%);
+      padding: 0;
+      padding-top: 15px;
+    }
+
+    @media (max-width: $md) {
+      width: 50%;
+    }
+  }
 }
 
 .card__desc {
@@ -130,6 +197,10 @@
     line-height: 1.2;
     font-family: $ff-main;
     color: #666;
+
+    @media (max-width: $lg) {
+      display: none;
+    }
   }
 }
 
@@ -205,6 +276,10 @@
     background-color: transparent;
     visibility: visible;
     opacity: 1;
+
+    @media (max-width: $lg) {
+      flex-direction: row;
+    }
   }
 }
 
@@ -270,6 +345,18 @@
       background: url("../img/icon/add-cart.png") no-repeat;
     }
   }
+
+  .card--list & {
+    @media (max-width: $lg) {
+      height: 48px;
+    }
+  }
+
+  .card--list &::after {
+    @media (max-width: $lg) {
+      left: 40px;
+    }
+  }
 }
 
 .card__cart-text {
@@ -292,6 +379,12 @@
     padding-left: 35px;
 
     font-size: 15px;
+  }
+
+  .card--list & {
+    @media (max-width: $lg) {
+      padding-left: 45px;
+    }
   }
 }
 
@@ -326,6 +419,10 @@
 
       background-color: #f8f8f8;
     }
+
+    @media (max-width: $lg) {
+      height: 48px;
+    }
   }
 }
 
@@ -356,6 +453,10 @@
   .card--list & {
     flex-grow: 0;
     margin-bottom: 30px;
+
+    @media (max-width: $md) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -381,5 +482,9 @@
   .card--list & {
     margin-top: 0;
     margin-bottom: 20px;
+
+    @media (max-width: $lg) {
+      margin-bottom: 0;
+    }
   }
 }
