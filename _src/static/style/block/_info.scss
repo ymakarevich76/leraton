@@ -152,6 +152,11 @@
   text-align: right;
   color: #fff;
 
+  &:hover {
+    color: #396b48;
+    text-decoration: none;
+  }
+
   @media (max-width: $lg) {
     font-size: 30px;
     text-align: left;

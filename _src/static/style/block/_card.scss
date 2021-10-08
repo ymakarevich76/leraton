@@ -66,10 +66,6 @@
       .card__cost {
         color: #fff;
       }
-
-      .card__buy-btn {
-        background-color: $c-red;
-      }
     }
 
     &::after {
@@ -98,6 +94,20 @@
       }
     }
   }
+
+  &--not {
+    .card__buy-btn {
+      color: #ccc;
+
+      background-color: #f8f8f8;
+
+      &:hover {
+        color: #ccc;
+
+        background-color: #f8f8f8;
+      }
+    }
+  }
 }
 
 .card--list.card--not {
@@ -106,10 +116,6 @@
 
     .card__cost {
       color: $c-accent;
-    }
-
-    .card__buy-btn {
-      background-color: #f8f8f8;
     }
   }
 }
@@ -395,10 +401,6 @@
 
   font-size: 18px;
 
-  @media (max-width: $xl) {
-    background-color: $c-accent;
-  }
-
   @media (max-width: $lg) {
     width: 100%;
     height: 60px;
@@ -412,14 +414,6 @@
   }
 
   .card--list & {
-    background-color: $c-accent;
-
-    &--disabled {
-      color: #ccc;
-
-      background-color: #f8f8f8;
-    }
-
     @media (max-width: $lg) {
       height: 48px;
     }

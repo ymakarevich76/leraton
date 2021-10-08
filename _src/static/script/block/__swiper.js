@@ -1,11 +1,10 @@
 const swiper = new Swiper('.inst-slider', {
-  // slidesPerView: 5,
   loop: true,
 
   freeMode: true,
 
   autoplay: {
-    delay: 1000,
+    delay: 2000,
 
   },
 
@@ -27,8 +26,8 @@ const swiper = new Swiper('.inst-slider', {
     },
     1366: {
       slidesPerView: 5,
+
     }
   },
-
 
 });

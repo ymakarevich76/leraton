@@ -231,6 +231,10 @@
 
   &--disabled {
     opacity: .5;
+
+    &:hover {
+      background-color: $c-accent;
+    }
   }
 
   &:first-child {

@@ -16,6 +16,16 @@
 
   &:hover {
     background-color: #396b48;
+
+    &--disabled {
+      color: #ccc;
+
+      background-color: #f8f8f8;
+    }
+
+    & .filter__action-btn--disabled {
+      opacity: .5;
+    }
   }
 
   &--accent {
@@ -24,5 +34,19 @@
     &:hover {
       background-color: #ac2121;
     }
+
+    @media (max-width: $xl) {
+      background-color: $c-accent;
+
+      &:hover {
+        background-color: #396b48;
+      }
+    }
+  }
+
+  &--disabled {
+    color: #ccc;
+
+    background-color: #f8f8f8;
   }
 }
