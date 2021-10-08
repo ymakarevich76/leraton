@@ -1,11 +1,1 @@
-<svg width="98" height="87" viewBox="0 0 98 87" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="29" height="27" rx="3" fill="black"/>
-<rect y="30" width="29" height="27" rx="3" fill="black"/>
-<rect y="60" width="29" height="27" rx="3" fill="black"/>
-<rect x="69" width="29" height="27" rx="3" fill="black"/>
-<rect x="69" y="30" width="29" height="27" rx="3" fill="black"/>
-<rect x="69" y="60" width="29" height="27" rx="3" fill="black"/>
-<rect x="34" width="29" height="27" rx="3" fill="black"/>
-<rect x="34" y="30" width="29" height="27" rx="3" fill="black"/>
-<rect x="34" y="60" width="29" height="27" rx="3" fill="black"/>
-</svg>
+<svg width="98" height="87" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="29" height="27" rx="3" fill="#000"/><rect y="30" width="29" height="27" rx="3" fill="#000"/><rect y="60" width="29" height="27" rx="3" fill="#000"/><rect x="69" width="29" height="27" rx="3" fill="#000"/><rect x="69" y="30" width="29" height="27" rx="3" fill="#000"/><rect x="69" y="60" width="29" height="27" rx="3" fill="#000"/><rect x="34" width="29" height="27" rx="3" fill="#000"/><rect x="34" y="30" width="29" height="27" rx="3" fill="#000"/><rect x="34" y="60" width="29" height="27" rx="3" fill="#000"/></svg>

@@ -17,12 +17,12 @@
   }
 
   @media (max-width: $lg) {
-    top: 16px;
+    top: 5px;
     right: 14px;
   }
 
   @media (max-width: $md) {
-    top: 5px;
+    top: 8px;
     right: 10px;
   }
 }
@@ -45,6 +45,7 @@
   }
 
   @media (max-width: $lg) {
+    top: 16px;
     right: 25px;
   }
 

@@ -177,7 +177,7 @@ const js = () => {
   .pipe(dest(path.dist.script), { sourcemaps: true })
   .pipe(browserSync.stream());
 }
-  
+
 const jsBuild = () => {
   return src(path.src.script)
   .pipe(fileinclude())

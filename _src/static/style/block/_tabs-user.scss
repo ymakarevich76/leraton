@@ -43,6 +43,11 @@
 
   &--active {
     background-color: $c-red;
+
+    &:hover,
+    &:active {
+      background-color: #ac2121;
+    }
   }
 }
 
