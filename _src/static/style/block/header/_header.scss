@@ -200,6 +200,10 @@
 
   &:hover {
     color: $c-grey;
+
+    @media (max-width: $lg) {
+      color: $c-red;
+    }
   }
 }
 
