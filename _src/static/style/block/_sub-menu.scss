@@ -28,19 +28,7 @@
   }
 }
 
-.sub-menu__container {
-  display: flex;
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
 .sub-menu__row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 -20px !important;
-
   @media (max-width: $xl) {
     flex-direction: column;
     margin: 0 !important;
@@ -48,8 +36,7 @@
 }
 
 .sub-menu__col {
-  width: calc(100% / 4 - 40px);
-  margin: 0 20px;
+  width: $c-3;
 
   @media (max-width: $xl) {
     width: 100%;

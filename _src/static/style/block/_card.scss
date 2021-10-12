@@ -211,20 +211,17 @@
 }
 
 .card__available {
-  display: none;
-  .card--list & {
-    display: inline-block;
-    margin-bottom: 15px;
+  display: inline-block;
+  margin-bottom: 15px;
 
-    font-weight: 400;
-    font-size: $fz-main;
-    line-height: 1.2;
-    font-family: $ff-main;
-    color: $c-accent;
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-accent;
 
-    &--not {
-      color: $c-red;
-    }
+  &--not {
+    color: $c-red;
   }
 }
 

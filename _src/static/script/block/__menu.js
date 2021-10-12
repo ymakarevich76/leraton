@@ -30,7 +30,6 @@ nav.addEventListener('click', (evt) => {
 });
 
 
-
 if (document.querySelectorAll('.btn-chevron')) {
   const btnsChevron = document.querySelectorAll('.btn-chevron');
   btnsChevron.forEach((btn) => {
