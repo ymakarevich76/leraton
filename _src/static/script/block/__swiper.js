@@ -1,4 +1,5 @@
 const swiper = new Swiper('.inst-slider', {
+
   loop: true,
 
   freeMode: true,

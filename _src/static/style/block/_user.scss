@@ -1,8 +1,17 @@
 .user {
   height: auto;
+  margin-top: 187px;
 
   background: url("../img/bc/bc-empty.jpg") no-repeat;
   background-size: cover;
+
+  @media (max-width: $lg) {
+    margin-top: 163px;
+  }
+
+  @media (max-width: $md) {
+    margin-top: 137px;
+  }
 }
 
 .user__container {
