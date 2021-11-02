@@ -9,22 +9,9 @@
 .catalog__wrap {
   display: none;
 
-  // &--list {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
-  // &--grid {
-  //   display: flex;
-  // }
-
   &--active {
     display: flex;
   }
-
-  // &:nth-child(2) {
-  //   flex-direction: column;
-  // }
 }
 
 .catalog__insert {
@@ -43,7 +30,8 @@
 }
 
 .catalog__card {
-  width: $c-3;
+  // width: $c-3;
+  width: calc(20% - 30px);
   margin-bottom: 45px;
 
   @media (max-width: $lg) {

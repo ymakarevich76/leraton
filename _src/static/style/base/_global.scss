@@ -12,6 +12,19 @@ body {
 
 .main {
   flex-grow: 1;
+  margin-top: 185px;
+
+  @media (max-width: $xl) {
+    margin-top: 200px;
+  }
+
+  @media (max-width: $lg) {
+    margin-top: 162px;
+  }
+
+  @media (max-width: $md) {
+    margin-top: 135px;
+  }
 }
 
 img {

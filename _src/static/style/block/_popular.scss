@@ -38,7 +38,8 @@
 }
 
 .popular__card {
-  width: $c-3;
+  // width: $c-3;
+  width: calc(20% - 30px);
   margin-bottom: 45px;
 
   @media (max-width: $lg) {
