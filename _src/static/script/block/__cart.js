@@ -1,71 +1,48 @@
-if (document.querySelectorAll('.good__available-value')) {
-  const STEP = 1;
-  let MAX_VALUE;
+if (document.querySelectorAll('.good')) {
   const MIN_VALUE = 1;
-
-  const nums = document.querySelectorAll('.good__available-value');
-
-  // const findValue = () => {
-  nums.forEach((num) => {
-    const count = num;
-    MAX_VALUE = count.innerHTML;
-  });
-  // }
 
   const btnsPlus = document.querySelectorAll('.plus');
   const btnsMinus = document.querySelectorAll('.minus');
-  const fields = document.querySelectorAll('.add-cart__count-num');
-  let fieldValue;
+
+  btnsPlus.forEach((btn) => {
+    btn.addEventListener('click', (evt) => {
+
+      const field = evt.target.closest('.good').querySelector('.add-cart__count-num');
+      const num = evt.target.closest('.good').querySelector('.good__available-value').innerHTML;
+
+      let fieldValue = parseFloat(field.value);
+      if (fieldValue < num) {
+        fieldValue++;
+        field.setAttribute('value', fieldValue);
+      }
 
 
-  const onBtnMinusPress = () => {
-    fields.forEach((field) => {
-      fieldValue = parseFloat(field.value);
+      btn.classList.add('active');
+
+      btnsMinus.forEach((btn) => {
+        btn.classList.remove('active');
+      })
+    })
+  })
+
+  btnsMinus.forEach((btn) => {
+    btn.addEventListener('click', (evt) => {
+
+      const field = evt.target.closest('.good').querySelector('.add-cart__count-num');
+
+      let fieldValue = parseFloat(field.value);
       if (fieldValue > MIN_VALUE) {
-        fieldValue -= STEP;
+        fieldValue--;
         field.setAttribute('value', fieldValue);
       }
-    })
-    btnsPlus.forEach((btnPlus) => {
-      btnPlus.classList.remove('active')
-    })
+      btnsPlus.forEach((btn) => {
+        btn.classList.remove('active');
+      })
+      btn.classList.add('active');
 
-    btnsMinus.forEach((btnMinus) => {
-      btnMinus.classList.add('active')
-    })
-  }
-
-
-  const onBtnPlusPress = () => {
-    fields.forEach((field) => {
-      fieldValue = parseFloat(field.value);
-      if (fieldValue < MAX_VALUE) {
-        fieldValue += STEP;
-        field.setAttribute('value', fieldValue);
+      if (fieldValue <= MIN_VALUE) {
+        btn.classList.remove('active');
       }
     })
-
-    btnsPlus.forEach((btnPlus) => {
-      btnPlus.classList.add('active')
-    })
-
-    btnsMinus.forEach((btnMinus) => {
-      btnMinus.classList.remove('active')
-    })
-  }
-
-  const toAddCartCount = () => {
-    fields.forEach((field) => {
-      field.setAttribute('value', MIN_VALUE);
-    })
-
-    btnsPlus.forEach((btnPlus) => {
-      btnPlus.addEventListener('click', onBtnPlusPress);
-    })
-
-    btnsMinus.forEach((btnMinus) => {
-      btnMinus.addEventListener('click', onBtnMinusPress);
-    })
-  }
-  toAddCartCount();
+  })
 }

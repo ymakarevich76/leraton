@@ -121,12 +121,12 @@
   width: 30px;
   height: 30px;
 
-  background: url("../img/icon/heart-regular.svg") no-repeat;
-  background-size: 30px;
+  background: url("../img/icon/heart_icon_passive.png") no-repeat;
+  background-size: 100%;
 
   &--active {
-    background: url("../img/icon/heart-solid.svg") no-repeat;
-    background-size: 30px;
+    background: url("../img/icon/heart_icon_active.png") no-repeat;
+    background-size: 100%;
   }
 }
 

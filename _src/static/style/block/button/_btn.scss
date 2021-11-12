@@ -50,3 +50,28 @@
     background-color: #f8f8f8;
   }
 }
+
+
+.btn-chevron {
+  display: none;
+
+  @media (max-width: $xl) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+
+    img {
+      width: 14px;
+      height: 14px;
+
+      transition: .3s;
+
+      .active & {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
