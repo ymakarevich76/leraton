@@ -1,0 +1,108 @@
+.news {
+  margin-bottom: 50px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 40px;
+  }
+}
+
+.news__insert {
+  background: url("../img/bc/bc-help.png") no-repeat center center;
+  background-size: cover;
+}
+
+.news__top-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.news__box-btn {
+  display: flex;
+
+  @media (max-width: $lg) {
+    display: none;
+  }
+}
+
+.news__btn {
+  position: relative;
+
+  display: inline-block;
+  padding: 4px 6px;
+
+  font-weight: 300;
+  font-size: $fz-main;
+  line-height: 13px;
+
+  background: #fff;
+
+  transition: all .234s ease 0s;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+
+    &::after {
+      content: "|";
+      position: absolute;
+      top: 50%;
+      right: -11px;
+
+      display: inline;
+
+      font-weight: 300;
+      font-size: 14px;
+      color: rgba(29,29,29,.5);
+
+      transform: translateY(-50%);
+      cursor: default;
+    }
+  }
+
+  &--active {
+    background-color: #ffe000;
+
+    &:hover,
+    &:active {
+      background-color: #ffe000;
+    }
+  }
+}
+
+.news__box-content {
+}
+
+.news__content {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.news__wrap {
+  margin-bottom: 30px;
+}
+
+.news__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px !important;
+}
+
+.news__block {
+  width: $c-4;
+  height: calc(100% - 24px);
+  margin: 0 15px;
+  margin-bottom: 24px;
+
+  @media (max-width: $lg) {
+    width: $c-6;
+  }
+
+  @media (max-width: $md) {
+    width: $c-12;
+  }
+}

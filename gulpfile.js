@@ -93,98 +93,98 @@ const img = () => {
 ///////////////////////////////////////////////////////// sprite
 const sprite = () => {
   return src(path.src.sprite)
-  // minify svg
-  .pipe(svgmin({
-    js2svg: {
-      pretty: true
-    }
-  }))
-  // remove all fill, style and stroke declarations in out shapes
-  .pipe(cheerio({
-    run: function ($) {
-      $('[fill]').removeAttr('fill');
-      $('[stroke]').removeAttr('stroke');
-      $('[style]').removeAttr('style');
-    },
-    parserOptions: {
-      xmlMode: true
-    }
-  }))
-  // cheerio plugin create unnecessary string '&gt;', so replace it.
-  .pipe(replace('&gt;', '>'))
-  // build svg sprite
-  .pipe(svgSprite({
-    mode: {
-      symbol: {
-        sprite: "sprite.svg",
+    // minify svg
+    .pipe(svgmin({
+      js2svg: {
+        pretty: true
       }
-    }
-  }))
-  .pipe(dest(path.dist.img))
-  .pipe(browserSync.stream());
+    }))
+    // remove all fill, style and stroke declarations in out shapes
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: {
+        xmlMode: true
+      }
+    }))
+    // cheerio plugin create unnecessary string '&gt;', so replace it.
+    .pipe(replace('&gt;', '>'))
+    // build svg sprite
+    .pipe(svgSprite({
+      mode: {
+        symbol: {
+          sprite: "sprite.svg",
+        }
+      }
+    }))
+    .pipe(dest(path.dist.img))
+    .pipe(browserSync.stream());
 }
 
 ///////////////////////////////////////////////////////// css
 const cssLib = () => {
   return src(path.src.styleLib)
-  .pipe(sass())
-  .pipe(cleancss())
-  .pipe(rename({
-    suffix: '.min'
-  }))
-  .pipe(dest(path.dist.style))
-  .pipe(browserSync.stream());
+    .pipe(sass())
+    .pipe(cleancss())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(dest(path.dist.style))
+    .pipe(browserSync.stream());
 }
 
 const css = () => {
   return src(path.src.style, { sourcemaps: true })
-  .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
-  .pipe(gcmq())
-  .pipe(autoprefixer(['last 15 versions']))
-  .pipe(rename({ suffix: '.min' }))
-  .pipe(dest(path.dist.style, { sourcemaps: true }))
-  .pipe(browserSync.stream());
+    .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
+    .pipe(gcmq())
+    .pipe(autoprefixer(['last 15 versions']))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(dest(path.dist.style, { sourcemaps: true }))
+    .pipe(browserSync.stream());
 }
 
 const cssBuild = () => {
   return src(path.src.style)
-  .pipe(sass())
-  .pipe(gcmq())
-  .pipe(autoprefixer(['last 15 versions']))
-  // .pipe(cleancss())
-  .pipe(rename({ suffix: '.min' }))
-  .pipe(dest(path.dist.style));
+    .pipe(sass())
+    .pipe(gcmq())
+    .pipe(autoprefixer(['last 15 versions']))
+    // .pipe(cleancss())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(dest(path.dist.style));
 }
 
 ///////////////////////////////////////////////////////// js
 
 const jsLib = () => {
   return src(path.src.scriptLib)
-  .pipe(fileinclude({
-    basepath: '@root'
-  }))
-  .pipe(uglify())
-  .pipe(rename({suffix: '.min'}))
-  .pipe(dest(path.dist.script))
-  .pipe(browserSync.stream());
+    .pipe(fileinclude({
+      basepath: '@root'
+    }))
+    // .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(dest(path.dist.script))
+    .pipe(browserSync.stream());
 }
 
 const js = () => {
   return src(path.src.script, { sourcemaps: true })
-  .pipe(fileinclude())
-  .pipe(babel({ presets: ['@babel/preset-env'] }))
-  .pipe(rename({suffix: '.min'}))
-  .pipe(dest(path.dist.script), { sourcemaps: true })
-  .pipe(browserSync.stream());
+    .pipe(fileinclude())
+    .pipe(babel({ presets: ['@babel/preset-env'] }))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(dest(path.dist.script), { sourcemaps: true })
+    .pipe(browserSync.stream());
 }
 
 const jsBuild = () => {
   return src(path.src.script)
-  .pipe(fileinclude())
-  .pipe(babel({ presets: ['@babel/env'] }))
-  // .pipe(uglify())
-  .pipe(rename({suffix: '.min'}))
-  .pipe(dest(path.dist.script));
+    .pipe(fileinclude())
+    .pipe(babel({ presets: ['@babel/env'] }))
+    // .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(dest(path.dist.script));
 }
 
 ///////////////////////////////////////////////////////// watcher

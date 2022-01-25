@@ -1,0 +1,96 @@
+.post {
+}
+
+.post__insert {
+  background: url("../img/bc/bc-help.png") no-repeat center center;
+  background-size: cover;
+}
+
+.post__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post__content {
+  width: calc(100% - 33.333333%);
+  padding-right: 70px;
+  padding-bottom: 100px;
+
+  @media (max-width: $xl) {
+    padding-right: 40px;
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  @media (max-width: $md) {
+    padding-bottom: 40px;
+  }
+}
+
+.post__header {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.post__label {
+  display: inline-block;
+  padding: 0 6px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #1d1d1d;
+
+  background-color: #ffe000;
+}
+
+.post__time {
+  margin-left: 20px;
+
+  font-size: 13px;
+  color: #8e8e8e;
+}
+
+.post__title {
+  margin-bottom: 15px;
+}
+
+.post__text {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: $fz-main;
+  color: $c-secondary;
+}
+
+.post__wrap-img {
+  margin-top: 50px;
+}
+
+.post__wrap-img figcaption {
+  margin-top: 15px;
+  margin-bottom: 50px;
+
+  font-size: 13px;
+  color: #8e8e8e;
+}
+
+.post__sidebar {
+  width: calc(100% / 3);
+
+  @media (max-width: $lg) {
+    display: none;
+    width: 100%;
+  }
+}
+
+.post__block:not(:last-child) {
+  margin-bottom: 30px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid rgba(29, 29, 29, .1);
+}

@@ -12,3 +12,6 @@
 @@include('block/__product-add-cart.js');
 @@include('block/__heart-btn.js');
 @@include('block/__cart.js');
+@@include('block/__news-tabs.js');
+@@include('block/__select-post.js');
+@@include('block/__select-tabs.js');
